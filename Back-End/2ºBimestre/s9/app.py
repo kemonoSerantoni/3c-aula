@@ -8,3 +8,4 @@ def home():
     return "api funcionando"
 
 app.run(debug=True)
+
