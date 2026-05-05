@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula do 3C</title>
+</head>
+
+<body>
+    <hr>
+    <h1 id="titulo">Relou uordi</h1>
+    <button onclick="mudarTexto()">Mudar texto</button>
+    <hr>
+    <h2 id="titulo2">Hello world!</h2>
+    <button onclick="mudarCor()">mudar cor</button>
+    <hr>
+    <input type="text" id="nome">
+    <button onclick="saudar()">incomodar</button>
+    <p id="mensagem"></p>
+    <hr>
+    <button onclick="add()">+</button>
+    <button onclick="remove()">- </button>
+    <h2 id="numero">0</h2>
+    
+
+
+    <script>
+        function mudarTexto() {
+            document.getElementById("titulo").innerHTML = "Teisto auteradu";
+        }
+
+        function mudarCor() {
+            document.getElementById("titulo2").style.color = "red";
+        }
+        //fmjtfv f´ vn nfseb  ç(+1)
+        function saudar() {
+            var nomeDigitado = document.getElementById("nome").value;
+            document.getElementById("mensagem").innerHTML = "me deixa em paz " + nomeDigitado + " kakakkaka"; 
+            document.getElementById("mensagem").style.color = "blue";
+        }
+        var valor = 0;
+        function add() {
+            valor += 1;
+            document.getElementById("numero").innerHTML = valor; 
+            document.getElementById("numero").style.color = "green";
+        }
+        function remove() {
+            valor -= 1;
+            document.getElementById("numero").innerHTML = valor; 
+            document.getElementById("numero").style.color = "red";
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+    "nome": "Lucca Serantoni",
+    "idade": 17,
+    "Curso": [
+        "PHP",
+        "BD"
+    ],
+    "LIsta de materias": [
+        "portugues",
+        "matematica",
+        "fisica",
+        "IA",
+        "BD",
+        "Historia",
+        "Front-end",
+        "Back-end",
+        "Versionamento",
+        "Redação e Leitura"
+    ],
+    "ativo": true,
+    "Reprovado": false,
+    "Email": "luccaserantonipinto@gmail.com",
+    "telefone": null
+}

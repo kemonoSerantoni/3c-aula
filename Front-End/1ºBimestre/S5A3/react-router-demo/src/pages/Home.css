@@ -1,0 +1,16 @@
+.titulo {
+    color:rgb(255, 0, 0);
+}
+
+.caixa{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-direction: row;
+}
+.nome1 {
+    box-shadow: 5px;
+    background-color: lightblue;
+    padding: 10px;
+    border: 5px solid black;
+}

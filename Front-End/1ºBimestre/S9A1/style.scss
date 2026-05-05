@@ -1,0 +1,37 @@
+// variaveis
+
+$cor-primaria: #ff0000;
+$cor-secundaria: green;
+
+//mixin
+@mixin sombra {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+//botao
+.btn{
+    background: $cor-primaria;
+    color: white;
+    padding:10px;
+    border: none;
+
+    &:hover{
+        background-color: $cor-secundaria;
+    }
+}
+
+//card
+.card{
+    background-color: white;
+    padding: 20px;
+
+    @include sombra();
+
+    h2{
+        color: $cor-primaria;
+    }
+
+    p{
+        color:gray;
+    }
+}
