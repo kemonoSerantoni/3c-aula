@@ -16,13 +16,14 @@ def salvar(dados):
 @app.route("/")
 def home():
     return "api funcionando"
-"""
+
 @app.route("/produtos")
 def listar():
     return jsonify(carregar())
-"""
+
 @app.route("/produtos", methods=["POST"])
 def adicionar():
+    
     produtos = carregar()
     dados = request.get_json()
 
@@ -30,14 +31,13 @@ def adicionar():
         "id": len(produtos)+1,
         "nome": dados["nome"]
     }
-
-produtos.append(novo)
-salvar(produtos)
-
-return novo
+    produtos.append(novo)
+    salvar(produtos)
+    return novo
 
 @app.route("/produtos/<int:id>", methods=["DELETE"])
 def deletar(id):
+    
     produtos = carregar()
 
     for p in produtos:

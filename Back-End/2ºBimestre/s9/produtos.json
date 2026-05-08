@@ -1,4 +1,7 @@
 [
     {"id":1,"nome": "Camiseta"}, 
-    {"id":2,"nome": "Tenis"}
+    {"id":2,"nome": "Tenis"},
+    {"id":3,"nome": "Casaco"},
+    {"id":4,"nome": "Calça"},
+    {"id":5,"nome": "Meia"}
 ]
