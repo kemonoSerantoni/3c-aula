@@ -1,0 +1,25 @@
+.btn {
+  background: #5400a8;
+  color: white;
+  padding: 10px;
+  border: none;
+  height: 50px;
+  width: 800px;
+}
+.btn:hover {
+  background-color: rgb(156, 81, 255);
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.card h2 {
+  color: #5400a8;
+}
+.card p {
+  color: gray;
+}
+
+/*# sourceMappingURL=style.css.map */
