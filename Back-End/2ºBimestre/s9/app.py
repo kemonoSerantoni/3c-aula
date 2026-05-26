@@ -37,14 +37,24 @@ def adicionar():
 
 @app.route("/produtos/<int:id>", methods=["DELETE"])
 def deletar(id):
-    
     produtos = carregar()
-
     for p in produtos:
         if p["id"] == id:
             produtos.remove(p)
             salvar(produtos)
-            return{"msg": "removido"}
+            return p
+    return {"erro": "não encontrado"}
+    
+    
+@app.route("/produtos/<int:id>", methods=["PUT"])
+def atualizar(id):
+    produtos = carregar()
+    dados = request.get_json()
+    for p in produtos:
+        if p["id"] == id:
+            p["nome"] = dados["nome"]
+            salvar(produtos)
+            return p
     return {"erro": "não encontrado"}
 
 app.run(debug=True)
