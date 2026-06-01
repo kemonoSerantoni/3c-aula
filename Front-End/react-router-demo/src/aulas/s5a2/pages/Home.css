@@ -1,0 +1,16 @@
+/* Home.css */
+.titulo {
+  color: red;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
