@@ -1,0 +1,60 @@
+.grid-container {
+    border:1px solid #333;
+    display: grid;
+    grid-template-columns: 1fr 1r; /* Menu e conteúdo */
+    grid-template-rows: auto 2fr auto; /* Header, conteúdo, e footer */
+    grid-template-areas: 
+      "header header"
+
+      "menu main"
+      "footer footer";
+    gap: 10px;
+    
+  }
+  
+  .header {
+    border:2px solid #8f0000;
+    grid-area: header;
+    background-color: #ff0000;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .menu {
+    border:2px solid #333;
+    grid-area: menu;
+    background-color: #ff4949;
+    padding: 90px;
+  }
+  
+  .main {
+    border:1px solid #333;
+    grid-area: main;
+    background-color: #ffbcbc;
+    padding: 20px;
+  }
+  
+  .footer {
+    border:5px solid #b300ff;
+    grid-area: footer;
+    background-color: #ff0000;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Remover a coluna do menu */
+      grid-template-areas:
+        "header"
+        "main"
+        "menu"
+        "footer";
+    }
+    
+    .menu {
+      display: none; /* Esconder o menu em telas pequenas */
+    }
+  }
+  

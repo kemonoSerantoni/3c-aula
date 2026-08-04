@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <p id="meu-paragrafo">texto original do paragrafo</p>
     <button id="meu-botao">Clique aqui</button>
     <button id="botao_texto">alterar pro texto original</button>
     <button id="botao_cor">botao da cor</button>
-   
+
     <script>
         //seleciona os elementos do html
         const paragrafo = document.getElementById("meu-paragrafo");
         const botao = document.getElementById("meu-botao");
 
-         //escuta e altera o texto do paragrafo
-         botao.addEventListener("click", function() {
+        //escuta e altera o texto do paragrafo
+        botao.addEventListener("click", function () {
             paragrafo.textContent = "texto alterado";
         });
-     
+
         //volta pro texto original
         const botao_texto = document.getElementById("botao_texto");
-        botao_texto.addEventListener("click", function() {
+        botao_texto.addEventListener("click", function () {
             paragrafo.textContent = "texto original do paragrafo";
         });
 
         //altera a cor do paragrafo
         const botao_cor = document.getElementById("botao_cor");
-        botao_cor.addEventListener("click", function() {
+        botao_cor.addEventListener("click", function () {
             paragrafo.style.color = "blue";
-                   
         });
     </script>
 
 
-    
+
 </body>
+
 </html>
