@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a</title>
+</head>
+
+<body>
+    <h1>PAINEL DO SEI LA OQ QUE ABUSA DA API </h1>
+    <button onclick="buscarvoos()"> BUSCAR VOOS</button>
+
+    <pre id="resultado"> Clique no botão</pre>
+    <script>
+        function buscarvoos() {
+            fetch('http://127.0.0.1:5000/api/voos')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('resultado').textContent = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    console.error('erro na requisição', error);
+                    document.getElementById('resultado').textContent = "ERRO DE CORS: Veja o console do navegador (F12)";
+                })
+        }
+    </script>
+</body>
+
+</html>

@@ -8,14 +8,19 @@ def enviar_alerta(status, texto):
         status (str): O status da mensagem (sucesso ou erro).
         texto (str): O texto da mensagem.
     """
+    print("")
     if status == "sucesso":
         print("✅ --- ALERTA DE SUCESSO ---")
         print("   Mensagem: ", texto)
-        print("---------------------------")
+        print("   Status: ", status)
+        print("   Detalhes: Build concluído com sucesso.")
+        print("-------------------------------")
     else:
         print("❌ --- ALERTA DE ERRO ---")
         print("   Mensagem: ", texto)
-        print("-----------------------")
+        print("   Status: ", status)
+        print("   Detalhes: Erro ao executar o build.")
+        print("-------------------------------")
 
 def executar_build():
     """
