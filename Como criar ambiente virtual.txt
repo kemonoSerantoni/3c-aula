@@ -1,0 +1,14 @@
+Como criar ambiente virtual
+
+python -m venv venv
+venv\Scripts\activate
+pip install flask
+
+python - entrar no ambiente python
+exit - sair do ambiente
+
+python name.py para pegar o site
+
+curl -X POST http://127.0.0.1:5000/produtos -H "Content-Type: application/json" -d "{\"nome\":\"Bone\"}"
+API restful retorna tudo - roteamento
+API graphQL eu escolho - 

@@ -1,0 +1,16 @@
+Como Cria um Repositorio dos arquivos no GitHub
+
+Git init
+dir /a --> mostra se o repositorio esta iniciado
+Cria um arquivo e Commite
+Entre no GitHub
+Criar um Repositorio no GitHub
+git config --global credential.helper store
+git config user.name name
+git config user.email email
+git remote add origin link.do.git
+git branch -M main
+git push -u origin main
+
+git checkout <hash> - volta pro commit anterior
+git checkout <hash> -- <nome do arquivo>  - restaur aa versão apenas do arquivo especifico
