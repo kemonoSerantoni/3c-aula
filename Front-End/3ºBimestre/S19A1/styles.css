@@ -1,0 +1,132 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header centralizado */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ff0e0e;
+    color: #000000;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    position: relative;
+}
+
+/* Seção de perfil */
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Painel de informações usando CSS Grid */
+.info-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ff1919;
+}
+
+.action-btn {
+    padding: 10px 20px;
+    background-color: #00ff1e;
+    color: #060000;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.action-btn:hover {
+    background-color: #1100ff;
+
+}
+
+/* Linha decorativa antes do título usando ::before */
+header h1::before {
+    content: "‣";
+    margin-right: 10px;
+    color: #ff0000;
+}
+
+/* Estilização de linhas alternadas no painel de informações */
+.info-panel div:nth-child(even) {
+    background-color: #ffd2d2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Ícone decorativo no botão com ::after */
+.action-btn::after {
+    content: " ➜";
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+/* Animação hover no botão */
+.action-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+@media (max-width: 800px) {
+    /* Header */
+    header {
+        padding: 15px;
+    }
+
+
+    /* Seção de perfil em coluna */
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Painel de informações em uma coluna */
+    .info-panel {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+    }
+}
