@@ -1,0 +1,12 @@
+{
+    "users": [
+      { "id": "1", "name": "Ana", "email": "ana@email.com", "age": 28 },
+      { "id": "2", "name": "Bruno", "email": "bruno@email.com", "age": 34 }
+    ],
+    "books": [
+      { "id": "101", "title": "Dom Casmurro", "userId": "1" },
+      { "id": "102", "title": "Memórias Póstumas", "userId": "1" },
+      { "id": "103", "title": "O Cortiço", "userId": "2" }
+    ]
+  }
+  

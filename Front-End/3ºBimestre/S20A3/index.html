@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu card acessivel</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card{
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            
+            border-radius: 8px;
+
+            
+        }
+        
+        .btn-like{
+            background-color: #0e16ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-like:hover{
+            background-color: #008516;
+            
+        }
+
+        #Meu-imagem{
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            margin-bottom: 10px;
+            border: 2px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="card">
+        <h1>Perfil de Acessibilidade</h1>
+        <img id="Meu-imagem" src="images (8).jpg" alt="Perfil de Acessibilidade">
+        <h2>Santo</h2>
+        <p>Idade: 21 anos</p>
+        <div class="btn-like" id="Meu-botao" role="button" tabindex="0" aria-label="Curtir Perfil"> Curtir Perfil </div>
+    </main>
+    
+</body>
+</html>
